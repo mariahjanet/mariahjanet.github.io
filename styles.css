@@ -1,9 +1,27 @@
-body {
-  background-color: powderblue;
-}
-h1 {
-  color: blue;
-}
-p {
-  color: red;
-}
+  body {
+    background-color: #f2f2f2;
+    /*background: url("First_BG.png") no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .jumbotron {
+    background-image: url("First_BG.png");
+    background-size: cover;
+    min-height: 725px;
+  }
+  .vertical-center {
+    min-height: 725px; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+  }
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
