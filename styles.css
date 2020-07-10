@@ -1,27 +1,73 @@
   body {
     background-color: #f2f2f2;
-    /*background: url("First_BG.png") no-repeat center center fixed;*/
+    /* background: url("forest2_BG.jpg") no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
   }
+
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
   }
+
   .jumbotron {
-    background-image: url("First_BG.png");
+    background-image: url("forest_BG.jpg");
     background-size: cover;
     min-height: 725px;
+    margin-bottom: 0;
+  }
+  .jumbotron h1 {
+  color: #B8CCC5;
+  font-size: 48px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  }
+
+  .jumbotron p {
+    color: #B8CCC5;
+  }
+
+  .jumbotron a {
+    color: #B8CCC5;
+    text-decoration:none;
   }
   .vertical-center {
-    min-height: 725px; /* These two lines are counted as one :-)       */
-
+    min-height: 725px;
     display: flex;
     align-items: center;
   }
+
+  #about {
+  background-color: white;
+  /* border: 1px solid red; */
+}
+  .circular--square {
+  border-radius: 50%;
+  border: 15px solid #B8CCC5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+  .centered {
+    display: flex;
+    justify-content: center;
+  }
+
+  #exp {
+  background-color: #B8CCC5;
+  /* border: 1px solid red; */
+  }
+  #projects {
+    background-color: #396347;
+    /* border: 1px solid red; */
+  }
+
+
+/*
   footer {
     background-color: #f2f2f2;
     padding: 25px;
-  }
+  } */
