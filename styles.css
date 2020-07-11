@@ -5,6 +5,7 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 100%
   }
 
   .navbar {
@@ -42,7 +43,8 @@
   #about {
   background-color: white;
   /* border: 1px solid red; */
-}
+  }
+
   .circular--square {
   border-radius: 50%;
   border: 15px solid #B8CCC5;
@@ -56,10 +58,21 @@
     justify-content: center;
   }
 
+
+
+  /* .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
   #exp {
   background-color: #B8CCC5;
   /* border: 1px solid red; */
   }
+
+
   #projects {
     background-color: #396347;
     /* border: 1px solid red; */
