@@ -68,15 +68,80 @@
 } */
 
   #exp {
-  background-color: #B8CCC5;
+  background-color: #5E8678;
   /* border: 1px solid red; */
   }
+  #exp p, h1, h2, h4, h5, h6{
+    color:#B8CCC5;
+  }
+
+
 
 
   #projects {
-    background-color: #396347;
+    background-color: #33583F;
     /* border: 1px solid red; */
   }
+
+  #projects .column {
+  float: left;
+  /*set numer of cards here*/
+  width: 33%;
+  padding: 0 10px;
+}
+#projects .row {margin: 0 auto;}
+
+/* Clear floats after the columns */
+#projects .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+#projects @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+#projects .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #B8CCC5;
+}
+
+/*background colours for the cardtabs*/
+.nav-tabs{
+  /* background-color:#161616; */
+}
+.tab-content{
+    /* background-color:#303136; */
+    color:#fff;
+    padding:5px
+}
+.nav-tabs > li > a{
+  border: medium none;
+}
+.nav-tabs > li > a:hover{
+  background-color: #303136 !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}
+
+.nav-tabs > li.active > a {
+  background-color: white !important;
+  border: medium none;
+  border-radius: 0;
+}
+#projects * {
+  box-sizing: border-box;
+}
 
 
 /*
