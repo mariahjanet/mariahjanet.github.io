@@ -13,10 +13,18 @@
     border-radius: 0;
   }
 
+
+  #nav1
+  {
+      background-color:black; /*whichever you want*/
+      opacity: 0.5;
+      filter:(opacity=50);
+  }
+
   .jumbotron {
-    background-image: url("forest_BG.jpg");
+    background-image: url("img/forest_BG.jpg");
     background-size: cover;
-    min-height: 725px;
+    min-height: 770px;
     margin-bottom: 0;
   }
   .jumbotron h1 {
@@ -35,7 +43,7 @@
     text-decoration:none;
   }
   .vertical-center {
-    min-height: 725px;
+    min-height: 770px;
     display: flex;
     align-items: center;
   }
@@ -56,6 +64,11 @@
   .centered {
     display: flex;
     justify-content: center;
+  }
+
+  .container {
+    max-width: 1280px;
+    padding: 40px 180px;
   }
 
 
@@ -89,7 +102,9 @@
   width: 33%;
   padding: 0 10px;
 }
-#projects .row {margin: 0 auto;}
+#projects .row {
+  margin: 0 auto;
+}
 
 /* Clear floats after the columns */
 #projects .row:after {
@@ -143,6 +158,15 @@
   box-sizing: border-box;
 }
 
+
+#contact {
+  background-color: #B8CCC5;
+  /* border: 1px solid red; */
+}
+#vol {
+  background-color: #1E2E28;
+  /* border: 1px solid red; */
+}
 
 /*
   footer {

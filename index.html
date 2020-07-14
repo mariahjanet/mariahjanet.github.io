@@ -22,7 +22,7 @@
 <body>
     <script src="test.js"></script>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top transparent" id="nav1">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -34,8 +34,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
         <li class="dropdown">
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#exp">Background</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -58,98 +58,104 @@
 <section id="about" class="about-me">
 <!-- Page Content -->
   <div class="container text-center">
-    <h1 class="font-weight-light" style="color:#1D242A"> • About Me • </h1>
-    <p style="color:#1D242A"> HEADLINE </p>
+    <h1 class="font-weight-light" style="color:#1F3725"> • About Me • </h1>
+    <p style="color:#1F3725"> HEADLINE </p>
   </div>
 </div>
-<div style="height: 50px"></div>
+<div style="height: 30px"></div>
 
 <div class="container-fluid">
   <div class="centered">
-    <div class="col-md-3 box text-center"><h1 style="text-align:right;">more info</h1>
-    <p style="text-align:right;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <div class="col-md-3 box text-center"><h1 style="text-align:right;">Hi I'm MJ!</h1>
+    <p style="text-align:right;color:#1F3725;">
+      I'm a new grad of Software Eng from McMaster University.
+      I have experience working with Oracle Databases and creating Java Applications.<br>
+      I am only happy when I am given the ability to solve problems and aim to do so as creatively as possible.
+
 
     </p></div>
-    <div class="col-md-2 box"><h1></h1><img class="circular--square" src="me.jpg"  width="200" height="235"/></div>
-    <div class="col-md-3 box text-center"><h1 style="text-align:left;font-size:14px;">more info</h1>
-    <p style="text-align:left;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <div class="col-md-2 box"><h1></h1><img class="circular--square" src="img/me.jpg"  width="200" height="235"/></div>
+    <div class="col-md-3 box text-center"><h1 style="text-align:left;font-size:20px;">Details</h1>
+    <p style="text-align:left;color:#1F3725;">
+      <b>Name:</b> Mariah Janet Lindsay <br>
+      <b>Age:</b> 24 <br>
+      <b>Address:</b> 36 Front St. S Mississauga<br>
+      <br>
+      <b> Programming Languages:</b> <br>
+      Java, Python, C/C++ <br>
+      SQL, PL/SQL, UNIX Scripting <br>
+      HTML, CSS, JavaScript
+
+
+
 </p></div>
-    <!-- <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div> -->
   </div>
 </div>
 <div style="height: 100px"></div>
 </section>
 
-<section id="exp" class="experience">
+<section id="exp" class="container-fluid">
 <!-- <div class="outer"> -->
-  <div class="container">
+
     <h1 class="font-weight-light centered" style="color:#B8CCC5"> • Experience & Background • </h1>
-</div>
+
       <hr style="width:70%;text-align:center;">
 
-      <div style="height: 30px"></div>
+      <!-- <div style="height: 30px"></div> -->
 
-      <div class="centered">
+<div class="container">
         <h1>Education</h1>
-      </div>
-      <div style="height: 20px"></div>
+
+      <div style="height: 40px"></div>
 
       <div class="row">
-        <div class="centered">
-        <div class="col-sm-7">
-          <div class="media">
-            <img class="pull-left" src="Mac4.png" style="width:250px;height:125px;">
-            <div class="media-body">
-              <h4 class="mt-0">Bachelor of Engineering & Society, B.Eng.Society</h4>
-              <h6><i>McMaster University, Hamilton ON</i></h6>
-              <h5>Software Engineering and Society Co-op (2020)</h5>
-              <p>
-              Recient graduate. Learned the fundemantals of engineering while specalizing in the design and development of computer systems and software.
-              The Scoiety specilization expanded my knowledge on how engineering practices affect society's 3 pillars of sustainability (Economic, Environmental, and Societal).
-              The Co-op designation signifies I completed 16-months of software development experience at AcrelorMittal Defasco.
-              <br>
-            </p>
-
-            </div>
-          </div>
+        <div class="mx-auto col-lg-4 d-flex justify-content-center">
+          <img src="img/Mac4.png" style="width:250px;height:125px;">
+        </div>
+        <div class="col-lg-8">
+          <h4>Bachelor of Engineering & Society, B.Eng.Society</h4>
+          <h6><i>McMaster University, Hamilton ON</i></h6>
+          <h5>Software Engineering and Society Co-op (2020)</h5>
+          <p>
+          Recient graduate. Learned the fundemantals of engineering while specalizing in the design and development of computer systems and software.
+          The Scoiety specilization expanded my knowledge on how engineering practices affect society's 3 pillars of sustainability (Economic, Environmental, and Societal).
+          The Co-op designation signifies I completed 16-months of software development experience at AcrelorMittal Defasco.
+          <br>
+        </p>
         </div>
       </div>
     </div>
-    <div style="height: 60px"></div>
+
+    </div>
+    <div style="height: 10px"></div>
 
 
   <hr style="width:70%;text-align:center;">
   <div style="height: 30px"></div>
 
-        <div class="centered">
+  <div class="container">
           <h1>Experience</h1>
-        </div>
-        <div style="height: 20px"></div>
-        </div>
+        <div style="height: 40px"></div>
         <div class="row">
-          <div class="centered">
-          <div class="col-sm-7">
-            <div class="media">
-              <img class="pull-left" src="dofasco.jpg" style="width:250px;height:125px;">
-              <div class="media-body">
-                <h4 class="mt-0">Software Developer</h4>
-                <h6><i>AcrelorMittal Dofasco, Hamilton ON</i></h6>
-                <h5>16-Month Internship (2018-2019)</h5>
-                <p>
-                Worked with the Automation Solutions Development Team focused on Upgrading & Maintaining Steel Manufacturing ETL systems and Oracle Databases.
-                Assisted in a branch wide upgrade of Manufacturing Execution System (MES) as a member of the Key Testing Team.<br>
-              </p>
-              </div>
-            </div>
+          <div class="mx-auto col-lg-4 d-flex justify-content-center">
+            <img src="img/dofasco.jpg" style="width:250px;height:125px;">
           </div>
-        </div>
+          <div class="col-lg-8">
+            <h4>Software Developer</h4>
+            <h6><i>AcrelorMittal Dofasco, Hamilton ON</i></h6>
+            <h5>16-Month Internship (2018-2019)</h5>
+            <p>
+            Worked with the Automation Solutions Development Team focused on Upgrading & Maintaining Steel Manufacturing ETL systems and Oracle Databases.
+            Assisted in a branch wide upgrade of Manufacturing Execution System (MES) as a member of the Key Testing Team.<br>
+          </p>
+          </div>
+      </div>
       </div>
       <div style="height: 30px"></div>
 
 <hr style="width:70%;text-align:center;">
 
-  <div style="height: 30px"></div>
+  <div style="height: 10px"></div>
 </div>
 </section>
 
@@ -167,68 +173,200 @@
       <div class="card">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
-          <li class="active"><a href="#home">Home</a></li>
-<li><a href="#menu1">Menu 1</a></li>
-<li><a href="#menu2">Menu 2</a></li>
+          <li class="active"><a href="#Card1">Bot Ross</a></li>
+<li><a href="#c1menu1">Details</a></li>
+<li><a href="#c1menu2">GUI & CAD</a></li>
 </ul>
 
 <div class="tab-content">
-<div id="home" class="tab-pane fade in active">
-  <h3>HOME</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div id="Card1" class="tab-pane fade in active">
+  <h4 style="color:white">Bot Ross</h4>
+  <img src="img/BR_inAct.png" style="width:300px;height:200px;">
+  <p>A Personal Painting Robot<br>
+    Software/Tron Capstone project 2019-2020
+  </p>
 </div>
-<div id="menu1" class="tab-pane fade">
-  <h3>Menu 1</h3>
-  <img src="First_BG.png" style="width:250px;height:125px;">
+<div id="c1menu1" class="tab-pane fade">
+  <img src="img/BR_softDemo.png" style="width:300px;height:200px;">
+  <p>Converts digital image into brush stroke instructions which are then sent to the mechanical components where a robotic head applies paint onto a canvas according to instructions</p>
 </div>
-<div id="menu2" class="tab-pane fade">
-  <h3>Menu 2</h3>
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+<div id="c1menu2" class="tab-pane fade">
+  <img src="img/BR_gui.png" style="width:200px;height:300px;">
+  <img src="img/Bot_Ross_cad.png" style="width:300px;height:200px;">
+  <p>Created from open source Python Pointillism image processing library, Arduino electronic kit, and custom made Chassis. </p>
 </div>
 </div>
 </div>
-
-<script>
-$(document).ready(function(){
-$(".nav-tabs a").click(function(){
-$(this).tab('show');
-});
-});
-</script>
-
       </div>
     </div>
 
     <div class="column">
       <div class="card">
-        <h3>Card 2</h3>
-        <p>Some text</p>
-        <p>Some text</p>
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+          <li class="active"><a href="#Card2">HCP</a></li>
+<li><a href="#c2menu1">Details</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="Card2" class="tab-pane fade in active">
+  <h3>Hexadecimal Colouring Page</h3>
+  <img src="img/HCP.png" style="width:300px;height:150px;">
+  <p>Hexadecimal Colouring Web Page Quiz<br>
+    Human Computer Interfaces Project 2019
+  </p>
+</div>
+<div id="c2menu1" class="tab-pane fade">
+  <img src="img/HCP2.png" style="width:300px;height:150px;">
+  <p>Implemented in Elm and Javascript, Design Thinking Project aimed at teaching high school students how to convert
+decimal numbers into hexadecimal numbers.</p>
+</div>
+</div>
+</div>
       </div>
     </div>
 
     <div class="column">
       <div class="card">
-        <h3>Card 3</h3>
-        <p>Some text</p>
-        <p>Some text</p>
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+          <li class="active"><a href="#Card3">HCP</a></li>
+<li><a href="#c3menu1">Details</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="Card3" class="tab-pane fade in active">
+  <h3>Flag Identification system</h3>
+  <img src="img/FIA.png" style="width:300px;height:150px;">
+  <p>Flag Identification Android App<br>
+    Large System Design Project 2018
+  </p>
+</div>
+<div id="c3menu1" class="tab-pane fade">
+  <img src="img/FIA_system.png" style="width:200px;height:300px;">
+  <p>Created with Android Studio and IntelliJ IDEA. Identifies top 6 matching flags in user uploaded photos based on colours, shapes, and user GPS location</p>
+</div>
+</div>
+</div>
       </div>
     </div>
 
-    <!-- <div class="column">
+<!-- Another row of projects -->
+  <div style="height: 700px"></div>
+
+  <div class="row">
+    <div class="column">
       <div class="card">
-        <h3>Card 4</h3>
-        <p>Some text</p>
-        <p>Some text</p>
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+          <li class="active"><a href="#Card4">Bot Ross</a></li>
+<li><a href="#c4menu1">Details</a></li>
+<li><a href="#c4menu2">GUI & CAD</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="Card4" class="tab-pane fade in active">
+  <h4 style="color:white">Bot Ross</h4>
+  <img src="img/BR_inAct.png" style="width:300px;height:200px;">
+  <p>A Personal Painting Robot<br>
+    Software/Tron Capstone project 2019-2020
+  </p>
+</div>
+<div id="c4menu1" class="tab-pane fade">
+  <img src="img/BR_softDemo.png" style="width:300px;height:200px;">
+  <p>Converts digital image into brush stroke instructions which are then sent to the mechanical components where a robotic head applies paint onto a canvas according to instructions</p>
+</div>
+<div id="c4menu2" class="tab-pane fade">
+  <img src="img/BR_gui.png" style="width:200px;height:300px;">
+  <img src="img/Bot_Ross_cad.png" style="width:300px;height:200px;">
+  <p>Created from open source Python Pointillism image processing library, Arduino electronic kit, and custom made Chassis. </p>
+</div>
+</div>
+</div>
       </div>
     </div>
-  </div> -->
+
+    <div class="column">
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+          <li class="active"><a href="#Card5">HCP</a></li>
+<li><a href="#c5menu1">Details</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="Card5" class="tab-pane fade in active">
+  <h3>Hexadecimal Colouring Page</h3>
+  <img src="img/HCP.png" style="width:300px;height:150px;">
+  <p>Hexadecimal Colouring Web Page Quiz<br>
+    Human Computer Interfaces Project 2019
+  </p>
+</div>
+<div id="c5menu1" class="tab-pane fade">
+  <img src="img/HCP2.png" style="width:300px;height:150px;">
+  <p>Implemented in Elm and Javascript, Design Thinking Project aimed at teaching high school students how to convert
+decimal numbers into hexadecimal numbers.</p>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+          <li class="active"><a href="#Card6">HCP</a></li>
+<li><a href="#c6menu1">Details</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="Card6" class="tab-pane fade in active">
+  <h3>Flag Identification system</h3>
+  <img src="img/FIA.png" style="width:300px;height:150px;">
+  <p>Flag Identification Android App<br>
+    Large System Design Project 2018
+  </p>
+</div>
+<div id="c6menu1" class="tab-pane fade">
+  <img src="img/FIA_system.png" style="width:200px;height:300px;">
+  <p>Created with Android Studio and IntelliJ IDEA. Identifies top 6 matching flags in user uploaded photos based on colours, shapes, and user GPS location</p>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+
+    <div style="height: 500px"></div>
 
 
-  <div style="height: 300px"></div>
+
+  <script>
+  $(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+  $(this).tab('show');
+  });
+  });
+  </script>
+
+</section>
+
+<section id="vol" class="volunteer">
+  <div class="container text-center">
+    <h1 class="font-weight-light" style="color:#B8CCC5"> • Volunteering • </h1>
+    <p style="color:#B8CCC5"> HEADLINE </p>
+  </div>
+    <div style="height: 300px"></div>
 </section>
 
 
+<section id="contact" class="contact-me">
+  <div class="container text-center">
+    <h1 class="font-weight-light" style="color:#1F3725"> • Contact • </h1>
+    <p style="color:#1F3725"> HEADLINE </p>
+  </div>
+    <div style="height: 50px"></div>
+</section>
 
 
 
