@@ -1,15 +1,21 @@
 <!DOCTYPE html>
+
+<!-- TODO:
+fix the mobile issue
+continue to add in projects and more info about you
+Add contact info and volunteering at the bottom
+ -->
 <html lang="en">
 <head>
   <title>Mariah Janet Lindsay</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
 
   <!-- Bootstrap references-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
   <!-- personal style -->
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -21,27 +27,31 @@
 </head>
 <body>
     <script src="test.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
 
-<nav class="navbar navbar-inverse navbar-fixed-top transparent" id="nav1">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+
+  <nav class="navbar navbar-expand-md float-right g-dark navbar-dark fixed-top" id="nav1">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span style="color:white;" class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto p-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#exp">Background</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#exp">Background</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </div>
-  </div>
 </nav>
 
 
@@ -56,6 +66,7 @@
 
 
 <section id="about" class="about-me">
+  <div style="height: 60px"></div>
 <!-- Page Content -->
   <div class="container text-center">
     <h1 class="font-weight-light" style="color:#1F3725"> • About Me • </h1>
@@ -94,21 +105,22 @@
 <div style="height: 100px"></div>
 </section>
 
-<section id="exp" class="container-fluid">
+<section id="exp" class="container-fluid expSet">
+  <div style="height: 60px"></div>
 <!-- <div class="outer"> -->
 
-    <h1 class="font-weight-light centered" style="color:#B8CCC5"> • Experience & Background • </h1>
+    <h1 class="font-weight-light centered" style="color:#B8CCC5">Experience & Background</h1>
 
       <hr style="width:70%;text-align:center;">
 
       <!-- <div style="height: 30px"></div> -->
 
 <div class="container">
-        <h1>Education</h1>
+        <h1 style="color:#B8CCC5">Education</h1>
 
       <div style="height: 40px"></div>
 
-      <div class="row">
+      <div class="row expSet">
         <div class="mx-auto col-lg-4 d-flex justify-content-center">
           <img src="img/Mac4.png" style="width:250px;height:125px;">
         </div>
@@ -134,9 +146,9 @@
   <div style="height: 30px"></div>
 
   <div class="container">
-          <h1>Experience</h1>
+          <h1 style="color:#B8CCC5">Experience</h1>
         <div style="height: 40px"></div>
-        <div class="row">
+        <div class="row expSet">
           <div class="mx-auto col-lg-4 d-flex justify-content-center">
             <img src="img/dofasco.jpg" style="width:250px;height:125px;">
           </div>
@@ -160,200 +172,258 @@
 </section>
 
 <section id="projects" class="projects">
+  <div style="height: 60px"></div>
   <div class="container text-center">
-    <h1 class="font-weight-light" style="color:#B8CCC5"> • Past Projects • </h1>
-    <p style="color:#B8CCC5"> HEADLINE </p>
+    <h1 class="font-weight-light" style="color:#B8CCC5">Past Projects</h1>
+    <p style="color:#B8CCC5"> A sample of some of the projects I have worked on </p>
   </div>
 
-
-
-
-  <div class="row">
-    <div class="column">
+  <div class="card-deck">
+    <!-- card info -->
+    <!-- DataMover -->
       <div class="card">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
-          <li class="active"><a href="#Card1">Bot Ross</a></li>
-<li><a href="#c1menu1">Details</a></li>
-<li><a href="#c1menu2">GUI & CAD</a></li>
-</ul>
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#c1t1" role="tab" aria-controls="description" aria-selected="true" style="color:black;">DataMover</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#c1t2" role="tab" aria-controls="history" aria-selected="false" style="color:black;">Details</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">DataMover</h4> -->
+                <!-- <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6> -->
 
-<div class="tab-content">
-<div id="Card1" class="tab-pane fade in active">
-  <h4 style="color:white">Bot Ross</h4>
-  <img src="img/BR_inAct.png" style="width:300px;height:200px;">
-  <p>A Personal Painting Robot<br>
-    Software/Tron Capstone project 2019-2020
-  </p>
-</div>
-<div id="c1menu1" class="tab-pane fade">
-  <img src="img/BR_softDemo.png" style="width:300px;height:200px;">
-  <p>Converts digital image into brush stroke instructions which are then sent to the mechanical components where a robotic head applies paint onto a canvas according to instructions</p>
-</div>
-<div id="c1menu2" class="tab-pane fade">
-  <img src="img/BR_gui.png" style="width:200px;height:300px;">
-  <img src="img/Bot_Ross_cad.png" style="width:300px;height:200px;">
-  <p>Created from open source Python Pointillism image processing library, Arduino electronic kit, and custom made Chassis. </p>
-</div>
-</div>
-</div>
-      </div>
-    </div>
+                 <div class="tab-content mt-3">
+                  <div class="tab-pane active" id="c1t1" role="tabpanel">
+                    <h4 class="card-title">DataMover</h4>
+                    <img src="img/DM_para.png" style="width:300px;height:200px;">
+                    <p class="card-text">Parallel Testing Tool<br>
+                      Dofasco Internship Project 2018-2019</p>
+                    <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                  </div>
 
-    <div class="column">
-      <div class="card">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
-          <li class="active"><a href="#Card2">HCP</a></li>
-<li><a href="#c2menu1">Details</a></li>
-</ul>
+                  <div class="tab-pane" id="c1t2" role="tabpanel" aria-labelledby="history-tab">
+                    <img src="img/DM_java.png" style="width:150px;height:100px;">
+                    <img src="img/DM_alt.jpeg" style="width:150px;height:100px;">
+                    <p class="card-text">Java/Altova MapForce tool used for Parallel Testing Oracle Databases and L2 system messaging during Manufacturing Execution System (MES) Upgrade. Parsed XML, Preformed Extraction Transformation & Loading of data, and Executed PL/SQL packages.</p>
+                    <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                  </div>
 
-<div class="tab-content">
-<div id="Card2" class="tab-pane fade in active">
-  <h3>Hexadecimal Colouring Page</h3>
-  <img src="img/HCP.png" style="width:300px;height:150px;">
-  <p>Hexadecimal Colouring Web Page Quiz<br>
-    Human Computer Interfaces Project 2019
-  </p>
-</div>
-<div id="c2menu1" class="tab-pane fade">
-  <img src="img/HCP2.png" style="width:300px;height:150px;">
-  <p>Implemented in Elm and Javascript, Design Thinking Project aimed at teaching high school students how to convert
-decimal numbers into hexadecimal numbers.</p>
-</div>
-</div>
-</div>
-      </div>
-    </div>
+                </div>
+              </div>
+            </div>
 
-    <div class="column">
-      <div class="card">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
-          <li class="active"><a href="#Card3">HCP</a></li>
-<li><a href="#c3menu1">Details</a></li>
-</ul>
+            <!-- card info -->
+            <!-- BotRoss -->
+            <div class="card">
+                    <div class="card-header">
+                      <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#c2t1" role="tab" aria-controls="description" aria-selected="true">Bot Ross</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link"  href="#c2t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#c2t3" role="tab" aria-controls="deals" aria-selected="false">GUI & CAD</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <!-- <h4 class="card-title">Bologna</h4> -->
+                      <!-- <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6> -->
 
-<div class="tab-content">
-<div id="Card3" class="tab-pane fade in active">
-  <h3>Flag Identification system</h3>
-  <img src="img/FIA.png" style="width:300px;height:150px;">
-  <p>Flag Identification Android App<br>
-    Large System Design Project 2018
-  </p>
-</div>
-<div id="c3menu1" class="tab-pane fade">
-  <img src="img/FIA_system.png" style="width:200px;height:300px;">
-  <p>Created with Android Studio and IntelliJ IDEA. Identifies top 6 matching flags in user uploaded photos based on colours, shapes, and user GPS location</p>
-</div>
-</div>
-</div>
-      </div>
-    </div>
+                       <div class="tab-content mt-3">
+                        <div class="tab-pane active" id="c2t1" role="tabpanel">
+                          <h4 class="card-title">Bot Ross</h4>
+                          <img src="img/BR_inAct.png" style="width:300px;height:200px;">
+                          <p class="card-text">A Personal Painting Robot<br>
+                            Software/Tron Capstone project 2019-2020 </p>
+                          <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                        </div>
 
-<!-- Another row of projects -->
-  <div style="height: 700px"></div>
+                        <div class="tab-pane" id="c2t2" role="tabpanel" aria-labelledby="history-tab">
+                          <img src="img/BR_softDemo.png" style="width:300px;height:200px;">
+                          <p class="card-text">Converts digital image into brush stroke instructions which are then sent to the mechanical components where a robotic head applies paint onto a canvas according to instructions.</p>
+                          <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                        </div>
 
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
-          <li class="active"><a href="#Card4">Bot Ross</a></li>
-<li><a href="#c4menu1">Details</a></li>
-<li><a href="#c4menu2">GUI & CAD</a></li>
-</ul>
+                        <div class="tab-pane" id="c2t3" role="tabpanel" aria-labelledby="deals-tab">
+                          <img src="img/BR_gui.png" style="width:200px;height:300px;">
+                          <img src="img/Bot_Ross_cad.png" style="width:300px;height:200px;">
+                          <p class="card-text">Created from open source Python Pointillism image processing library, Arduino electronic kit, and custom made Chassis. </p>
+                          <!-- <a href="#" class="btn btn-danger btn-sm">Get Deals</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-<div class="tab-content">
-<div id="Card4" class="tab-pane fade in active">
-  <h4 style="color:white">Bot Ross</h4>
-  <img src="img/BR_inAct.png" style="width:300px;height:200px;">
-  <p>A Personal Painting Robot<br>
-    Software/Tron Capstone project 2019-2020
-  </p>
-</div>
-<div id="c4menu1" class="tab-pane fade">
-  <img src="img/BR_softDemo.png" style="width:300px;height:200px;">
-  <p>Converts digital image into brush stroke instructions which are then sent to the mechanical components where a robotic head applies paint onto a canvas according to instructions</p>
-</div>
-<div id="c4menu2" class="tab-pane fade">
-  <img src="img/BR_gui.png" style="width:200px;height:300px;">
-  <img src="img/Bot_Ross_cad.png" style="width:300px;height:200px;">
-  <p>Created from open source Python Pointillism image processing library, Arduino electronic kit, and custom made Chassis. </p>
-</div>
-</div>
-</div>
-      </div>
-    </div>
+                  <!-- card info -->
+                  <!-- This Website -->
+                  <div class="card">
+                          <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#c3t1" role="tab" aria-controls="description" aria-selected="true">Portfolio Website</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link"  href="#c3t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="card-body">
+                            <!-- <h4 class="card-title">Bologna</h4> -->
+                            <!-- <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6> -->
 
-    <div class="column">
-      <div class="card">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
-          <li class="active"><a href="#Card5">HCP</a></li>
-<li><a href="#c5menu1">Details</a></li>
-</ul>
+                             <div class="tab-content mt-3">
+                              <div class="tab-pane active" id="c3t1" role="tabpanel">
+                                <h4 class="card-title">WIP</h4>
+                                <p class="card-text">This Website! <br> Personal Project 2020</p>
+                                <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                              </div>
 
-<div class="tab-content">
-<div id="Card5" class="tab-pane fade in active">
-  <h3>Hexadecimal Colouring Page</h3>
-  <img src="img/HCP.png" style="width:300px;height:150px;">
-  <p>Hexadecimal Colouring Web Page Quiz<br>
-    Human Computer Interfaces Project 2019
-  </p>
-</div>
-<div id="c5menu1" class="tab-pane fade">
-  <img src="img/HCP2.png" style="width:300px;height:150px;">
-  <p>Implemented in Elm and Javascript, Design Thinking Project aimed at teaching high school students how to convert
-decimal numbers into hexadecimal numbers.</p>
-</div>
-</div>
-</div>
-      </div>
-    </div>
+                              <div class="tab-pane" id="c3t2" role="tabpanel" aria-labelledby="history-tab">
+                                <p class="card-text">Created in HTML, CSS, BootStrap 4, and JS <br> This website is still a work in progress.</p>
+                                <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                              </div>
 
-    <div class="column">
-      <div class="card">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
-          <li class="active"><a href="#Card6">HCP</a></li>
-<li><a href="#c6menu1">Details</a></li>
-</ul>
-
-<div class="tab-content">
-<div id="Card6" class="tab-pane fade in active">
-  <h3>Flag Identification system</h3>
-  <img src="img/FIA.png" style="width:300px;height:150px;">
-  <p>Flag Identification Android App<br>
-    Large System Design Project 2018
-  </p>
-</div>
-<div id="c6menu1" class="tab-pane fade">
-  <img src="img/FIA_system.png" style="width:200px;height:300px;">
-  <p>Created with Android Studio and IntelliJ IDEA. Identifies top 6 matching flags in user uploaded photos based on colours, shapes, and user GPS location</p>
-</div>
-</div>
-</div>
-      </div>
-    </div>
-
-    <div style="height: 500px"></div>
+                            </div>
+                          </div>
+                        </div>
+          <!-- card deck -->
+          </div>
 
 
+          <div class="card-deck">
+            <!-- card info -->
+            <!-- HCP -->
+              <div class="card">
+                      <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#c4t1" role="tab" aria-controls="description" aria-selected="true">HCP</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link"  href="#c4t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <!-- <h4 class="card-title">Bologna</h4> -->
+                        <!-- <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6> -->
 
-  <script>
-  $(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-  $(this).tab('show');
-  });
-  });
-  </script>
+                         <div class="tab-content mt-3">
+                          <div class="tab-pane active" id="c4t1" role="tabpanel">
+                            <h4 class="card-title">Hexadecimal Colouring Page</h4>
+                            <img src="img/HCP.png" style="width:300px;height:150px;">
+                            <p class="card-text">Hexadecimal Colouring Web Page Quiz<br>
+                            Human Computer Interfaces Project 2019</p>
+                            <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                          </div>
+
+                          <div class="tab-pane" id="c4t2" role="tabpanel" aria-labelledby="history-tab">
+                            <img src="img/HCP2.png" style="width:300px;height:150px;">
+                            <p class="card-text">Implemented in Elm and Javascript, Design Thinking Project aimed at teaching high school students how to convert
+                            decimal numbers into hexadecimal numbers.</p>
+                            <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- card info -->
+                    <!-- FIA -->
+                    <div class="card">
+                            <div class="card-header">
+                              <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#c5t1" role="tab" aria-controls="description" aria-selected="true">FIA</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link"  href="#c5t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="card-body">
+                              <!-- <h4 class="card-title">Bologna</h4> -->
+                              <!-- <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6> -->
+
+                               <div class="tab-content mt-3">
+                                <div class="tab-pane active" id="c5t1" role="tabpanel">
+                                  <h4 class="card-title">Flag Identification system</h4>
+                                  <img src="img/FIA.png" style="width:300px;height:150px;">
+                                  <p class="card-text">Flag Identification Android App<br>
+                                  Large System Design Project 2018</p>
+                                  <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                                </div>
+
+                                <div class="tab-pane" id="c5t2" role="tabpanel" aria-labelledby="history-tab">
+                                  <img src="img/FIA_system.png" style="width:200px;height:300px;">
+                                  <p class="card-text">Created with Android Studio and IntelliJ IDEA. Identifies top 6 matching flags in user uploaded photos based on colours, shapes, and user GPS location.</p>
+                                  <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- card info -->
+                          <!-- SuperCario -->
+                          <div class="card">
+                                  <div class="card-header">
+                                    <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" href="#c6t1" role="tab" aria-controls="description" aria-selected="true">SuperCario</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link"  href="#c6t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-body">
+                                    <!-- <h4 class="card-title">Bologna</h4> -->
+                                    <!-- <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6> -->
+
+                                     <div class="tab-content mt-3">
+                                      <div class="tab-pane active" id="c6t1" role="tabpanel">
+                                        <h4 class="card-title">SuperCario</h4>
+                                        <img src="img/SuperCario.png" style="width:300px;height:150px;">
+                                        <p class="card-text">Platform Game <br>
+                                        Software Project Management 2016</p>
+                                        <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                                      </div>
+
+                                      <div class="tab-pane" id="c6t2" role="tabpanel" aria-labelledby="history-tab">
+                                        <img src="img/Cario_design.png" style="width:300px;height:150px;">
+                                        <p class="card-text">Implemented in Python open source game engine. <br>MVC design, original artwork, portable and lightweight, with high re-play value.</p>
+                                        <!-- <a href="#" class="card-link text-danger">Read more</a> -->
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                  <!-- card deck -->
+                  </div>
+            <script>
+            $(document).ready(function(){
+            $('#bologna-list a').click(function(e){
+              e.preventDefault();
+              $(this).tab('show');
+            });
+            });
+            </script>
+
+<div style="height: 50px"></div>
 
 </section>
 
-<section id="vol" class="volunteer">
+<!-- <section id="vol" class="volunteer">
   <div class="container text-center">
-    <h1 class="font-weight-light" style="color:#B8CCC5"> • Volunteering • </h1>
+    <h1 class="font-weight-light" style="color:#B8CCC5">Volunteering</h1>
     <p style="color:#B8CCC5"> HEADLINE </p>
   </div>
     <div style="height: 300px"></div>
@@ -362,13 +432,14 @@ decimal numbers into hexadecimal numbers.</p>
 
 <section id="contact" class="contact-me">
   <div class="container text-center">
-    <h1 class="font-weight-light" style="color:#1F3725"> • Contact • </h1>
+    <h1 class="font-weight-light" style="color:#1F3725">Contact</h1>
     <p style="color:#1F3725"> HEADLINE </p>
   </div>
     <div style="height: 50px"></div>
-</section>
 
+</section> -->
 
+<!-- Working on warpping the cards when in mobile -->
 
 
 
