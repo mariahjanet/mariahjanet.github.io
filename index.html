@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
 <!-- TODO:
-fix the mobile issue
-continue to add in projects and more info about you
-Add contact info and volunteering at the bottom
+ADD IN THE ACTUAL IMAGES FOR EACH VOLUNTEERING POSITION
+Re-do the theme, font, and colours
+Figure out how to make the gen vol items centered in mobile
+Add a link to resume download?
  -->
+ 
 <html lang="en">
 <head>
   <title>Mariah Janet Lindsay</title>
@@ -36,10 +38,10 @@ Add contact info and volunteering at the bottom
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span style="color:white;" class="fa fa-bars"></span>
     </button>
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto p-2">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#top">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About Me</a>
@@ -50,19 +52,27 @@ Add contact info and volunteering at the bottom
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#vol">Volunteering</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
     </div>
 </nav>
 
-
+<section id="top">
 <div class="jumbotron vertical-center" >
   <div class="container text-center">
     <h1>Mariah Janet Lindsay</h1>
     <p> • Software Developer • </p>
     <a href="https://www.linkedin.com/in/mariah-janet-lindsay-430676b7/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/mariah-janet-lindsay-430676b7/"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://github.com/mariahjanet"><i class="fa fa-github" aria-hidden="true"></i></a>
   </div>
 </div>
+
+</section>
 
 
 <section id="about" class="about-me">
@@ -72,19 +82,18 @@ Add contact info and volunteering at the bottom
     <h1 class="font-weight-light" style="color:#1F3725"> • About Me • </h1>
     <p style="color:#1F3725"> HEADLINE </p>
   </div>
-</div>
+
 <div style="height: 30px"></div>
 
 <div class="container-fluid">
-  <div class="centered">
-    <div class="col-md-3 box text-center"><h1 style="text-align:right;">Hi I'm MJ!</h1>
-    <p style="text-align:right;color:#1F3725;">
+    <div class="row justify-content-center">
+    <div class="col-md-3 box text-center"><h1>Hi I'm MJ!</h1>
+    <p style="color:#1F3725;">
       I'm a new grad of Software Eng from McMaster University.
       I have experience working with Oracle Databases and creating Java Applications.<br>
       I am only happy when I am given the ability to solve problems and aim to do so as creatively as possible.
-
-
-    </p></div>
+    </p>
+  </div>
     <div class="col-md-2 box"><h1></h1><img class="circular--square" src="img/me.jpg"  width="200" height="235"/></div>
     <div class="col-md-3 box text-center"><h1 style="text-align:left;font-size:20px;">Details</h1>
     <p style="text-align:left;color:#1F3725;">
@@ -96,14 +105,14 @@ Add contact info and volunteering at the bottom
       Java, Python, C/C++ <br>
       SQL, PL/SQL, UNIX Scripting <br>
       HTML, CSS, JavaScript
-
-
-
-</p></div>
+    </p>
+  </div>
   </div>
 </div>
 <div style="height: 100px"></div>
 </section>
+
+
 
 <section id="exp" class="container-fluid expSet">
   <div style="height: 60px"></div>
@@ -222,13 +231,13 @@ Add contact info and volunteering at the bottom
                     <div class="card-header">
                       <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
                         <li class="nav-item">
-                          <a class="nav-link active" href="#c2t1" role="tab" aria-controls="description" aria-selected="true">Bot Ross</a>
+                          <a class="nav-link active" href="#c2t1" role="tab" aria-controls="description" aria-selected="true" style="color:black;">Bot Ross</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link"  href="#c2t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                          <a class="nav-link"  href="#c2t2" role="tab" aria-controls="history" aria-selected="false" style="color:black;">Details</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#c2t3" role="tab" aria-controls="deals" aria-selected="false">GUI & CAD</a>
+                          <a class="nav-link" href="#c2t3" role="tab" aria-controls="deals" aria-selected="false" style="color:black;">GUI & CAD</a>
                         </li>
                       </ul>
                     </div>
@@ -267,10 +276,10 @@ Add contact info and volunteering at the bottom
                           <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
                               <li class="nav-item">
-                                <a class="nav-link active" href="#c3t1" role="tab" aria-controls="description" aria-selected="true">Portfolio Website</a>
+                                <a class="nav-link active" href="#c3t1" role="tab" aria-controls="description" aria-selected="true" style="color:black;">Portfolio Website</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link"  href="#c3t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                                <a class="nav-link"  href="#c3t2" role="tab" aria-controls="history" aria-selected="false" style="color:black;">Details</a>
                               </li>
                             </ul>
                           </div>
@@ -281,12 +290,15 @@ Add contact info and volunteering at the bottom
                              <div class="tab-content mt-3">
                               <div class="tab-pane active" id="c3t1" role="tabpanel">
                                 <h4 class="card-title">WIP</h4>
+                                <img src="img/WB.png" style="width:300px;height:200px;">
                                 <p class="card-text">This Website! <br> Personal Project 2020</p>
                                 <!-- <a href="#" class="card-link text-danger">Read more</a> -->
                               </div>
 
                               <div class="tab-pane" id="c3t2" role="tabpanel" aria-labelledby="history-tab">
-                                <p class="card-text">Created in HTML, CSS, BootStrap 4, and JS <br> This website is still a work in progress.</p>
+                                <p class="card-text">Created in HTML, CSS, BootStrap 4, and JS. <br> I wanted to expand my knowledge of frontend and creat a personal website to showcase my portfolio.</p>
+                                <img src="img/WB_git_commits.png" style="width:300px;height:200px;">
+                                <p> The site is hosted on GitHub pages.</p>
                                 <!-- <a href="#" class="card-link text-danger">Read more</a> -->
                               </div>
 
@@ -296,6 +308,7 @@ Add contact info and volunteering at the bottom
           <!-- card deck -->
           </div>
 
+<div style="height: 20px"></div>
 
           <div class="card-deck">
             <!-- card info -->
@@ -304,10 +317,10 @@ Add contact info and volunteering at the bottom
                       <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
                           <li class="nav-item">
-                            <a class="nav-link active" href="#c4t1" role="tab" aria-controls="description" aria-selected="true">HCP</a>
+                            <a class="nav-link active" href="#c4t1" role="tab" aria-controls="description" aria-selected="true" style="color:black;">HCP</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link"  href="#c4t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                            <a class="nav-link"  href="#c4t2" role="tab" aria-controls="history" aria-selected="false" style="color:black;">Details</a>
                           </li>
                         </ul>
                       </div>
@@ -341,10 +354,10 @@ Add contact info and volunteering at the bottom
                             <div class="card-header">
                               <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
                                 <li class="nav-item">
-                                  <a class="nav-link active" href="#c5t1" role="tab" aria-controls="description" aria-selected="true">FIA</a>
+                                  <a class="nav-link active" href="#c5t1" role="tab" aria-controls="description" aria-selected="true" style="color:black;">FIA</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link"  href="#c5t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                                  <a class="nav-link"  href="#c5t2" role="tab" aria-controls="history" aria-selected="false" style="color:black;">Details</a>
                                 </li>
                               </ul>
                             </div>
@@ -377,10 +390,10 @@ Add contact info and volunteering at the bottom
                                   <div class="card-header">
                                     <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
                                       <li class="nav-item">
-                                        <a class="nav-link active" href="#c6t1" role="tab" aria-controls="description" aria-selected="true">SuperCario</a>
+                                        <a class="nav-link active" href="#c6t1" role="tab" aria-controls="description" aria-selected="true" style="color:black;">SuperCario</a>
                                       </li>
                                       <li class="nav-item">
-                                        <a class="nav-link"  href="#c6t2" role="tab" aria-controls="history" aria-selected="false">Details</a>
+                                        <a class="nav-link"  href="#c6t2" role="tab" aria-controls="history" aria-selected="false" style="color:black;">Details</a>
                                       </li>
                                     </ul>
                                   </div>
@@ -391,7 +404,7 @@ Add contact info and volunteering at the bottom
                                      <div class="tab-content mt-3">
                                       <div class="tab-pane active" id="c6t1" role="tabpanel">
                                         <h4 class="card-title">SuperCario</h4>
-                                        <img src="img/SuperCario.png" style="width:300px;height:150px;">
+                                        <img src="img/SuperCario.PNG" style="width:300px;height:150px;">
                                         <p class="card-text">Platform Game <br>
                                         Software Project Management 2016</p>
                                         <!-- <a href="#" class="card-link text-danger">Read more</a> -->
@@ -421,23 +434,253 @@ Add contact info and volunteering at the bottom
 
 </section>
 
-<!-- <section id="vol" class="volunteer">
+<section id="vol" class="volunteer">
+  <div style="height: 60px"></div>
   <div class="container text-center">
     <h1 class="font-weight-light" style="color:#B8CCC5">Volunteering</h1>
-    <p style="color:#B8CCC5"> HEADLINE </p>
+    <!-- <p style="color:#B8CCC5"> HEADLINE </p> -->
   </div>
-    <div style="height: 300px"></div>
+  <hr style="border-color:white;width:70%;text-align:center;">
+
+  <div class="container">
+
+
+<!-- <div style="height: 60px"></div> -->
+
+  <h3 style="color:#B8CCC5">Elected</h3>
+    <div style="height: 40px"></div>
+  </div>
+        <!-- Musical -->
+        <!-- <div class="container"> -->
+
+
+      <!-- SFWR rep -->
+      <div class="container">
+      <div class="row volSet">
+        <div class="mx-auto col-lg-4 d-flex justify-content-center">
+          <img src="img/MES.png" style="width:125px;height:200px;">
+        </div>
+        <div class="col-lg-8">
+          <h4>Software Department Representative 2017-2018</h4>
+          <h6><i>McMaster University, Hamilton ON</i></h6>
+          <h5>McMaster Engineering Society</h5>
+          <p>
+            Represented all McMaster Software Engineering students on the MES Council. Acted as a liaison between the MES and the Software Engineering Club. Vote on all motions brought to the MES council on behalf of McMaster Software Engineering students.
+          <br>
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 20px"></div>
+
+    <!-- VP external -->
+    <div class="container">
+    <div class="row volSet">
+      <div class="mx-auto col-lg-4 d-flex justify-content-center">
+        <img src="img/SES.png" style="width:200px;height:150px;">
+      </div>
+      <div class="col-lg-8">
+        <h4>VP External 2017-2018</h4>
+        <h6><i>McMaster University, Hamilton ON</i></h6>
+        <h5>Software Engineering Club/Society</h5>
+        <p>
+          Acted as a liaison between the MES and the Software Engineering Club. Kept the MES informed of department and Software Engineering Club issues and activities. Kept all Software Engineering students informed about the meetings and events run by the SEC and MES.
+          <br>
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 10px"></div>
+  <!-- <div style="height: 10px"></div> -->
+
+
+<!-- <hr style="border-color:white;width:90%;text-align:center;"> -->
+<hr style="border-color:white;width:70%;text-align:center;">
+<div style="height: 30px"></div>
+
+<div class="container">
+<h3 style="color:#B8CCC5">Appointed</h3>
+  <div style="height: 40px"></div>
+</div>
+
+<!-- WWC -->
+  <div class="container">
+    <div class="row volSet">
+      <div class="mx-auto col-lg-4 d-flex justify-content-center">
+        <img src="img/Mac4.png" style="width:250px;height:125px;">
+      </div>
+      <div class="col-lg-8">
+        <h4>Writing Crew Coordinator 2019-2020</h4>
+        <h6><i>McMaster University, Hamilton ON</i></h6>
+        <h5>McMaster Engineering Musical</h5>
+        <p>
+        Responsible for keeping script writing on time and in scope of theme/plot. Organized and oversaw the Writing Crew Team during script writing sessions. Acted as a liaison between Writing Crew and the Director/Producer.
+        <br>
+      </p>
+      </div>
+    </div>
+    </div>
+
+    <div style="height: 10px"></div>
+
+    <!-- EQ -->
+  <div class="container">
+  <div class="row volSet">
+    <div class="mx-auto col-lg-4 d-flex justify-content-center">
+      <img src="img/Mac4.png" style="width:250px;height:125px;">
+    </div>
+    <div class="col-lg-8">
+      <h4>Social Media Out Reach 2017-2019</h4>
+      <h6><i>McMaster University, Hamilton ON</i></h6>
+      <h5>McMaster Engiqueers</h5>
+    </div>
+  </div>
+</div>
+
+<div style="height: 10px"></div>
+
+<!-- VP Flush -->
+<!-- <div class="container">
+<div class="row volSet">
+  <div class="mx-auto col-lg-4 d-flex justify-content-center">
+    <img src="img/Mac4.png" style="width:250px;height:125px;">
+  </div>
+  <div class="col-lg-8">
+    <h4>VP Flush 2019-2020</h4>
+    <h6><i>McMaster University, Hamilton ON</i></h6>
+    <h5>McMaster Engineering Society Culture</h5>
+  </div>
+</div>
+</div>
+
+<div style="height: 10px"></div> -->
+
+<!-- Plumb -->
+<div class="container">
+<div class="row volSet">
+  <div class="mx-auto col-lg-4 d-flex justify-content-center">
+    <img src="img/Mac4.png" style="width:250px;height:125px;">
+  </div>
+  <div class="col-lg-8">
+    <h4>Co-Editor 2018-2019</h4>
+    <h6><i>McMaster University, Hamilton ON</i></h6>
+    <h5>McMaster Engineering Society Satirical Newspaper</h5>
+  </div>
+</div>
+</div>
+
+<!-- Quidditch -->
+<div class="container">
+<div class="row volSet">
+  <div class="mx-auto col-lg-4 d-flex justify-content-center">
+    <img src="img/Mac4.png" style="width:250px;height:125px;">
+  </div>
+  <div class="col-lg-8">
+    <h4>Social Media Officer & Exec Member 2014-2017</h4>
+    <h6><i>McMaster University, Hamilton ON</i></h6>
+    <h5>McMaster University, Quidditch Team</h5>
+  </div>
+</div>
+</div>
+
+<div style="height: 20px"></div>
+<hr style="border-color:white;width:70%;text-align:center;">
+<div style="height: 30px"></div>
+
+<div class="container">
+<h3 style="color:#B8CCC5">General Member</h3>
+  <div style="height: 40px"></div>
+</div>
+  <div class="container">
+  <div class="row volSet">
+    <div class="col-lg-4 col-md-6">
+        <div class="extra-item mx-auto mb-5 mb-lg-0">
+          <img src="img/Mac4.png" style="width:250px;height:125px;">
+          <h5>McMaster Engineering Musical</h5>
+          <h6>2016-2020</h6>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="extra-item mx-auto mb-5 mb-lg-0">
+          <img src="img/Mac4.png" style="width:250px;height:125px;">
+          <h5>Women In Engineering</h5>
+          <h6>2014-2020</h6>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="extra-item mx-auto mb-5 mb-lg-0">
+          <img src="img/Mac4.png" style="width:250px;height:125px;">
+          <h5>Engineering Student Ambassadors</h5>
+          <h6>2015-2018</h6>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="extra-item mx-auto mb-5 mb-lg-0">
+          <img src="img/Mac4.png" style="width:250px;height:125px;">
+          <h5>Engineering Advertising Committee</h5>
+          <h6>2016-2018</h6>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="extra-item mx-auto mb-5 mb-lg-0">
+          <img src="img/Mac4.png" style="width:250px;height:125px;">
+          <h5>McMaster Design & Art Association</h5>
+          <h6>2016-2017</h6>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="extra-item mx-auto mb-5 mb-lg-0">
+          <img src="img/Mac4.png" style="width:250px;height:125px;">
+          <h5>Welcome Week Engineering Rep</h5>
+          <h6>2016, 2017</h6>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <div style="height: 20px"></div>
+  <hr style="border-color:white;width:70%;text-align:center;">
+  <div style="height: 30px"></div>
+
+    <!-- <div style="height: 300px"></div> -->
 </section>
 
 
 <section id="contact" class="contact-me">
+  <div style="height: 60px"></div>
   <div class="container text-center">
-    <h1 class="font-weight-light" style="color:#1F3725">Contact</h1>
-    <p style="color:#1F3725"> HEADLINE </p>
+    <h1 class="font-weight-light" style="color:#1F3725">Contact Me</h1>
   </div>
-    <div style="height: 50px"></div>
+    <!-- <div style="height: 50px"></div> -->
+    <hr style="width:70%;text-align:center;">
+    <div style="height: 30px"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 ml-auto text-center">
+      <p> <b>Email:</b></p>
+      <a href="mailto:mariah.janet.lindsay@gmail.com">mariah.janet.lindsay@gmail.com</a>
+    </div>
+    <div class="col-md-6 ml-auto">
+    <a href="https://www.linkedin.com/in/mariah-janet-lindsay-430676b7/" style="font-size: 10px;"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true">: linkedin.com/in/mariah-janet-lindsay-430676b7</i></a>
+    <a href="https://github.com/mariahjanet" style="font-size: 10px;"><i class="fa fa-github fa-2x" aria-hidden="true">: github.com/mariahjanet</i></a>
 
-</section> -->
+    </div>
+  </div>
+</div>
+<div style="height: 20px"></div>
+<hr style="width:70%;text-align:center;">
+<div style="height: 10px"></div>
+
+
+
+</section>
 
 <!-- Working on warpping the cards when in mobile -->
 
