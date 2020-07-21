@@ -1,3 +1,7 @@
+/* * {
+  font-family: "Courier New", Courier, monospace;
+} */
+
    html, body {
     background-color: #f2f2f2;
     width: 100%;
@@ -56,6 +60,11 @@
   #about {
   background-color: #EEF3F1;
   /* border: 1px solid red; */
+  }
+
+  .details{
+    padding-left: 75px;
+    /* margin-left: 100px; */
   }
 
   .circular--square {
@@ -189,6 +198,8 @@
   background-color: #B8CCC5;
   /* border: 1px solid red; */
 }
+
+
 #vol {
   background-color: #1E2E28;
   /* border: 1px solid red; */
@@ -208,10 +219,21 @@
   color:#B8CCC5;
 }
 
+
+.extra-item {
+    max-width: 18rem;
+    padding-bottom: 1rem;
+}
+.extra-item img {
+    width: 10rem;
+    height: 10rem;
+}
+
 .contact-me a {
   color: #1E2E28;
   text-decoration:none;
 }
+
 
 
 /*
