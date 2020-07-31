@@ -15,7 +15,6 @@
 
   .navbar {
     margin-bottom: 0;
-    /* border-radius: 0; */
   }
 
 
@@ -23,13 +22,11 @@
   {
       background-color:black; /*whichever you want*/
       opacity: 0.75;
-      /* filter:(opacity=50); */
   }
 
   .jumbotron {
     background-image: url("img/forest_BG.jpg");
     background-size: cover;
-    /* min-height: 770px; */
     margin-bottom: 0;
   }
   .text-center {
@@ -59,12 +56,10 @@
 
   #about {
   background-color: #EEF3F1;
-  /* border: 1px solid red; */
   }
 
   .details{
     padding-left: 75px;
-    /* margin-left: 100px; */
   }
 
   .circular--square {
@@ -80,24 +75,9 @@
     justify-content: center;
   }
 
-  /* .container {
-    max-width: 1280px;
-    padding: 40px 180px;
-    text-align: center;
-  } */
-
-
-
-  /* .container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
   #exp {
   background-color: #5E8678;
-  /* border: 1px solid red; */
   }
   .expSet p {
     color:#B8CCC5;
@@ -118,7 +98,6 @@
 
   #projects {
     background-color: #33583F;
-    /* border: 1px solid red; */
   }
 
   .projects p{
@@ -159,30 +138,12 @@
   background-color: #B8CCC5;
 }
 
-/*background colours for the cardtabs*/
-.nav-tabs{
-  /* background-color:#161616; */
-}
 .tab-content{
-    /* background-color:#303136; */
-    /* color:#fff; */
     padding:5px
 }
 .nav-tabs > li > a{
   border: medium none;
 }
-/* .nav-tabs > li > a:hover{
-  background-color: #303136 !important;
-    border: medium none;
-    border-radius: 0;
-    color:#fff;
-}
-
-.nav-tabs > li.active > a {
-  background-color: white !important;
-  border: medium none;
-  border-radius: 0;
-} */
 
 
 .card-deck{
@@ -196,13 +157,11 @@
 
 #contact {
   background-color: #B8CCC5;
-  /* border: 1px solid red; */
 }
 
 
 #vol {
   background-color: #1E2E28;
-  /* border: 1px solid red; */
 }
 
 .volSet p {
@@ -220,11 +179,11 @@
 }
 
 
-.extra-item {
+.vol-item {
     max-width: 18rem;
     padding-bottom: 1rem;
 }
-.extra-item img {
+.vol-item img {
     width: 10rem;
     height: 10rem;
 }
@@ -233,11 +192,3 @@
   color: #1E2E28;
   text-decoration:none;
 }
-
-
-
-/*
-  footer {
-    background-color: #f2f2f2;
-    padding: 25px;
-  } */
